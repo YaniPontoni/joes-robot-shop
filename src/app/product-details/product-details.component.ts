@@ -4,11 +4,20 @@ import { IProduct } from '../catalog/product.model';
 @Component({
   selector: 'bot-product-details',
   templateUrl: './product-details.component.html',
+<<<<<<< Updated upstream
   styleUrls: ['./product-details.component.css'],
 })
 export class ProductDetailsComponent {
   @Input() product!: IProduct;
   @Output() buy = new EventEmitter();
+=======
+  styleUrls: ['./product-details.component.css']
+})
+export class ProductDetailsComponent {
+
+  @Input() product!: IProduct;
+  @Output() buy = new EventEmitter()
+>>>>>>> Stashed changes
 
   getImageUrl(product: IProduct) {
     if (!product) return '';
@@ -18,4 +27,10 @@ export class ProductDetailsComponent {
   buyButtonClicked(product: IProduct) {
     this.buy.emit();
   }
+<<<<<<< Updated upstream
 }
+=======
+
+}
+
+>>>>>>> Stashed changes
