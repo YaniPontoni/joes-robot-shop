@@ -29,7 +29,7 @@ export class CatalogComponent {
   getFilteredProducts() {
     return this.filter === ''
       ? this.products
-      : this.products.filter((product) => product.category === this.filter)
+      : this.products.filter((product: { category: string; }) => product.category === this.filter)
   }
 
   getDiscountedClasses(product: IProduct) {
