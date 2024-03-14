@@ -11,7 +11,6 @@
       <input name="numberInput" type="number" [(ngModel)]="numericInput" />
       <div>Value: {{numericInput}} Type: {{getType(numericInput)}}</div>
     </div>
-
     <div class="control">
       <select name="select" type="select" [(ngModel)]="stringInput">
         <option *ngFor="let option of selectOptions" [value]="option.value">{{option.text}}</option>

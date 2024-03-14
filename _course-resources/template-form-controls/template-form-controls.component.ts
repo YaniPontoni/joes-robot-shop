@@ -17,6 +17,7 @@ export class TemplateFormControlsComponent implements OnInit {
     { text: 'Option One', value: 1 },
     { text: 'Option Two', value: 2 },
   ];
+
   constructor() { }
 
   ngOnInit(): void { }
