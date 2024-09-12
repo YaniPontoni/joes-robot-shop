@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateFormControlsComponent implements OnInit {
   textInput: string = '';
+<<<<<<< HEAD
+  numericInput: number = 0;
+=======
   numericInput: string = '';
+>>>>>>> main
   stringInput: string = '';
   numericSelect: number = 0;
   checkboxInput: boolean = false;
@@ -17,9 +21,15 @@ export class TemplateFormControlsComponent implements OnInit {
     { text: 'Option One', value: 1 },
     { text: 'Option Two', value: 2 },
   ];
+<<<<<<< HEAD
+  constructor() { }
+
+  ngOnInit(): void { }
+=======
   constructor() {}
 
   ngOnInit(): void {}
+>>>>>>> main
 
   getType(value: any) {
     if (value === null || value === undefined) return '';
